@@ -58,11 +58,15 @@ public class Input {
 			System.out.println("error message confirm");
 		}
 
-		WebElement labelPosition = driver.findElement(By.id("j_idt106:float-input"));
+		WebElement labelPosition = driver.findElement(By.id("j_idt106:j_idt113"));
 		Point location = labelPosition.getLocation();
 		System.out.println(location);
-		labelPosition.click();
-		if (labelPosition == location) {
+		WebElement textfield = driver.findElement(By.id("j_idt106:float-input"));
+		textfield.click();
+		WebElement labelPosition2 = driver.findElement(By.id("j_idt106:j_idt113"));
+		Point location1 = labelPosition2.getLocation();
+		System.out.println(location1);
+		if (labelPosition == labelPosition2) {
 			System.out.println("same");
 		} else {
 			System.out.println("not same");
