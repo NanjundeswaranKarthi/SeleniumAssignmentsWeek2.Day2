@@ -62,7 +62,7 @@ public class ButtonS {
 		Actions action = new Actions(driver);
 		action.moveToElement(findcolourChange).build().perform();
 		WebElement findcolourChange2 = driver.findElement(By.id("j_idt88:j_idt100"));
-		String secondcolour = findcolourChange.getCssValue("background-color");
+		String secondcolour = findcolourChange2.getCssValue("background-color");
 		System.out.println(secondcolour);
 		if(firstColour==secondcolour) {
 			System.out.println("not changed");
