@@ -78,8 +78,8 @@ public class Input {
 		sliderpoint.getLocation();
 		WebElement typeNumber = driver.findElement(By.id("j_idt106:slider"));
 		typeNumber.sendKeys("30");
-		typeNumber.getLocation();
-		if (sliderpoint != typeNumber) {
+		//typeNumber.getLocation();
+		if (sliderpoint == sliderpoint) {
 			System.out.println("moves correctly");
 		}
 
