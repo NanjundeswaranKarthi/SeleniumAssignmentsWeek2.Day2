@@ -77,7 +77,7 @@ public class Input {
 		 * driver.findElement(By.id("j_idt106:j_idt116_input"));
 		 * findElement.sendKeys("07/07/1994");
 		 */
-
+		////Type number and check the slider moves correctly
 		WebElement sliderpoint = driver.findElement(By.xpath("//*[@id='j_idt106:j_idt120']/div"));
 		sliderpoint.getLocation();
 		WebElement typeNumber = driver.findElement(By.id("j_idt106:slider"));
@@ -88,6 +88,25 @@ public class Input {
 		if (sliderpoint == sliderpoint2) {
 			System.out.println("moves correctly");
 		}
+		
+		//Type number and check the slider moves correctly.(another step)
+//		WebElement sliderpoint = driver.findElement(By.xpath("//*[@id='j_idt106:j_idt120']/div"));
+//		String attribute = sliderpoint.getAttribute("style");
+//		System.out.println("Slider rest state "+attribute);
+//		
+//		WebElement typeNumber = driver.findElement(By.id("j_idt106:slider"));
+//		typeNumber.sendKeys("30");
+//		
+//		WebElement sliderpoint2 = driver.findElement(By.xpath("//*[@id='j_idt106:j_idt120']/div"));
+//		String attribute1 = sliderpoint.getAttribute("style");
+//		System.out.println("Slider moved state "+attribute1);
+//		
+//		if(attribute==attribute1){
+//			System.out.println("moves wrongly");
+//		}
+//		else {
+//			System.out.println("moves corectly");
+//		}
 
 	}
 
