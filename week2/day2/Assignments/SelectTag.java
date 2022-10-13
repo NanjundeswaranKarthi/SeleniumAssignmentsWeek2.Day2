@@ -57,8 +57,10 @@ public class SelectTag {
 		driver.findElement(By.id("j_idt87:lang")).click();
 		driver.findElement(By.xpath("(//*[text()='English'])[2]")).click();
 		
+		Thread.sleep(2000);
+		
 		//Select 'Two' irrespective of the language chosen
-		driver.findElement(By.id("j_idt87:value")).click();
+		driver.findElement(By.id("j_idt87:value_label")).click();
 		driver.findElement(By.xpath("(//*[text()='Two'])[2]")).click();
 		
 		
